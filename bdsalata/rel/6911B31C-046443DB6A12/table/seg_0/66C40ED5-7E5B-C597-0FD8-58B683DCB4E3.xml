@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66C40ED5-7E5B-C597-0FD8-58B683DCB4E3" name="Wizyty">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opisuje wizyty w przychodni</commentInRDBMS>
+<generatorID>E203E8F0-5F9B-C6AA-058A-552C1DF35F52</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_wizyty" id="3E6EFDB1-19EE-B523-9673-A63969F64191">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania miedzy soba wizyty</commentInRDBMS>
+<generatorID>CA5948BD-CE5B-FB40-955B-94A0A2D0E1C9</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Godzina_rozpoczecia" id="0E912089-F80F-B603-09D8-637147F9E552">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla godzine rozpoczecia wizyty</commentInRDBMS>
+<generatorID>1896EED7-3320-8D68-0C22-D272F668D3AC</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Godzina_zakonczenia" id="0AD12677-D519-4928-4A68-621FBE90FB34">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla godzine zakonczenia wizyty </commentInRDBMS>
+<generatorID>287E0287-8321-25EC-F3F4-718768DC3141</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przyczyna" id="B491FCD9-F65E-5C7D-8EB4-A5A4EC2E1E42">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla przyczyne pacjenta, zwracajacego sie do lekarza</commentInRDBMS>
+<generatorID>2ECFF6E0-92A5-5084-C45E-5D284F562CB5</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena" id="82D53595-748A-D1C0-1C2C-45DEE488A170">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Cena wizyty</commentInRDBMS>
+<generatorID>7DA8B2A9-4225-D63B-E347-132D4B0E8578</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data" id="F5A04F31-8DF9-8ABA-9F8D-63F8BDC0EC6E">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>B04424CD-BB35-94FC-FC3D-E7AFCF6ED55F</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94A73457-C7C8-F6AA-6F41-497BCEBCEE2A" referredColumn="E7C83447-59B8-68F0-AACF-4F7AB5590F39"/>
+</associations>
+</Column>
+<Column name="PESEL_prac" id="3F19574F-8521-2D19-A069-7928D6DC4F24">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pracownikow</commentInRDBMS>
+<generatorID>6385EA31-7D29-F77B-A463-B250B8D5A369</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94A73457-C7C8-F6AA-6F41-497BCEBCEE2A" referredColumn="61B4A600-1088-7B5A-0644-E8FE54DB9AE4"/>
+</associations>
+</Column>
+<Column name="Nr_gabinetu" id="8E8BF1B0-CCCE-80F9-D088-028EE36CFDA9">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania gabinetow w przychodni</commentInRDBMS>
+<generatorID>195F66CB-C3F7-C93E-4EF4-4575AD063453</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94A73457-C7C8-F6AA-6F41-497BCEBCEE2A" referredColumn="2FAAEB26-5CEA-64C4-05B7-B89613660899"/>
+</associations>
+</Column>
+<Column name="PESEL_pac" id="75244616-8D04-EF9A-A24D-5A48F4D8A5E4">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pacjentow</commentInRDBMS>
+<generatorID>F9BE6C7A-6E35-31E3-4422-9531F73CEAB9</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD48FD15-7190-85B7-6839-35BD456FB13F" referredColumn="B472C6EF-58D6-3F57-5A36-530DCB583CA1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F5661E5-0144-1D2B-840C-7E430D30F9AF" name="W_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>4FC7BE89-4838-96CA-2D0E-4699F17BD422</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E6EFDB1-19EE-B523-9673-A63969F64191"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A101B87-543B-5FB7-A818-EE417ADD9DAB" name="Id_wizyty__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:22:41 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E6EFDB1-19EE-B523-9673-A63969F64191"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B43FA63A-6EB3-E28A-E516-776BA901E449" name="W_T_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>ED1D04C6-BDBF-8350-2972-4C5CFDB7AAC1</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5A04F31-8DF9-8ABA-9F8D-63F8BDC0EC6E"/>
+<colUsage columnID="3F19574F-8521-2D19-A069-7928D6DC4F24"/>
+<colUsage columnID="8E8BF1B0-CCCE-80F9-D088-028EE36CFDA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3EA72A8-219C-51C0-3967-EE1A1BDACD56" name="W_Pac_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>DDF0DEE4-1CD8-352E-DB90-7BB8565140BA</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75244616-8D04-EF9A-A24D-5A48F4D8A5E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

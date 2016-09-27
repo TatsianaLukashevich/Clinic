@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Badania" directorySegmentName="seg_0" id="AAFB7C1F-4B3F-5659-F211-8FE439486746">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PESEL_pac" id="28144C0B-E6BB-EA10-3EE6-B0DEA72D2DCB">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id_badania" id="9DA63A8B-2215-8021-DEBD-70CA2C892FCF">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nazwa" id="9FA75A35-50E3-7A91-7669-C9E0D044958F">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data" id="C2D88C86-689D-A7C1-C54D-3C4A6AAC64D3">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="B_Paci_FK" id="04CFF3DB-05FF-1E8D-2265-552426CD2989">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="B_PK" id="A81745F5-19FE-5C0B-2D14-315F85A08C76">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

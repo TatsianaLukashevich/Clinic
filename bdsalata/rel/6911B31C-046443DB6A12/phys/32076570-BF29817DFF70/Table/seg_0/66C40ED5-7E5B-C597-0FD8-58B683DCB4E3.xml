@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Wizyty" directorySegmentName="seg_0" id="66C40ED5-7E5B-C597-0FD8-58B683DCB4E3">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Data_wizyty" id="05955E85-7C41-93D9-8FD7-95DF2DFA6E24">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Godzina_zakonczenia" id="0AD12677-D519-4928-4A68-621FBE90FB34">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Godzina_rozpoczecia" id="0E912089-F80F-B603-09D8-637147F9E552">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id_wizyty" id="3E6EFDB1-19EE-B523-9673-A63969F64191">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESEL_prac" id="3F19574F-8521-2D19-A069-7928D6DC4F24">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESEL_pac" id="75244616-8D04-EF9A-A24D-5A48F4D8A5E4">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Cena" id="82D53595-748A-D1C0-1C2C-45DEE488A170">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nr_gabinetu" id="8E8BF1B0-CCCE-80F9-D088-028EE36CFDA9">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Przyczyna" id="B491FCD9-F65E-5C7D-8EB4-A5A4EC2E1E42">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data" id="F5A04F31-8DF9-8ABA-9F8D-63F8BDC0EC6E">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="W_T_FK" id="B43FA63A-6EB3-E28A-E516-776BA901E449">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="W_Pac_FK" id="D3EA72A8-219C-51C0-3967-EE1A1BDACD56">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="W_PK" id="9F5661E5-0144-1D2B-840C-7E430D30F9AF">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

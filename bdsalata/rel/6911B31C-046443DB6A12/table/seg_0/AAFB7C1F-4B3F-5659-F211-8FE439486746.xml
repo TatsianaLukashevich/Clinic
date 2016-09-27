@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAFB7C1F-4B3F-5659-F211-8FE439486746" name="Badania">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla badania prowadzone w przychodni</commentInRDBMS>
+<generatorID>D8EC899B-2DC1-DC1F-66C2-834F75258687</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_badania" id="9DA63A8B-2215-8021-DEBD-70CA2C892FCF">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania badan miedzy soba</commentInRDBMS>
+<generatorID>A6EC10BA-563A-C5BF-040E-8ACFAAEEC28B</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="9FA75A35-50E3-7A91-7669-C9E0D044958F">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do nazwy badania</commentInRDBMS>
+<generatorID>9B7A4665-326E-ADEA-DB64-E0286DF2AC0E</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESEL_pac" id="28144C0B-E6BB-EA10-3EE6-B0DEA72D2DCB">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pacjentow</commentInRDBMS>
+<generatorID>758F3B61-CD9C-AA5C-C3B3-A12FE1310DA2</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3520EB49-D888-B876-FE17-6B53488A5532" referredColumn="B472C6EF-58D6-3F57-5A36-530DCB583CA1"/>
+</associations>
+</Column>
+<Column name="Data" id="C2D88C86-689D-A7C1-C54D-3C4A6AAC64D3">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Data prowadzonego badania badania</commentInRDBMS>
+<generatorID>1646BECE-C823-F4BB-0D86-DC67166722B5</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A81745F5-19FE-5C0B-2D14-315F85A08C76" name="B_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>5CE3BAD2-E908-1077-A5C1-638D974CBD2F</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DA63A8B-2215-8021-DEBD-70CA2C892FCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD0B82D5-228C-33F8-E3BE-69CB607B0222" name="Id_badania__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:23:08 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DA63A8B-2215-8021-DEBD-70CA2C892FCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04CFF3DB-05FF-1E8D-2265-552426CD2989" name="B_Paci_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>2586D3C8-CBF1-95D7-B12A-FF6C20E80D55</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28144C0B-E6BB-EA10-3EE6-B0DEA72D2DCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

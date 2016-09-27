@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B27AD38-3237-6F00-5E8C-A510B5FAF51A" name="Testy">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opisuje testy prowadzone w przychodni</commentInRDBMS>
+<generatorID>A8F444A7-EA8C-6EE2-59A6-3F046B89ED47</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nr_testu" id="CF44D7FA-ABE5-012D-24FD-193EBC0038D6">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Numer prowadzonego testu</commentInRDBMS>
+<generatorID>A32FCAE3-A56D-F209-E6E4-F1A9D7BAA365</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wynik" id="6544E5DC-BB1D-1BD3-4501-0364C2AF0E1A">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Wyniki otrzymane po prowadzonym tescie</commentInRDBMS>
+<generatorID>39FBC019-51DA-E743-48AF-93E8AB858F1A</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis" id="852A95DC-E031-5859-7321-D74C2B5EB686">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opis prowadzonego testu</commentInRDBMS>
+<generatorID>D7C92E2D-2A9E-C151-6CAF-693162919F31</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_badania" id="4B470BE9-787C-5FD7-BAD2-BF10F78FA0D2">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania badan miedzy soba</commentInRDBMS>
+<generatorID>62073B27-FA74-204F-B29D-BD6EB1A79DC7</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9471D932-EE67-2B33-BD7B-29CF30EB362B" referredColumn="9DA63A8B-2215-8021-DEBD-70CA2C892FCF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5F65895-69DD-F770-70AD-CB8CEFA7C136" name="Testy_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>28B6CAFA-9489-6C6B-35D1-58A9D29E8B75</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF44D7FA-ABE5-012D-24FD-193EBC0038D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="267F2692-A2A0-CAA4-9697-E6208CF6F89E" name="Nr_testu__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:25:09 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF44D7FA-ABE5-012D-24FD-193EBC0038D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1372982-6778-C3DE-1D82-E0E3C44C73B5" name="Testy_B_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>7AA09B2C-7E7E-28C7-D469-C60ACE77A8BD</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B470BE9-787C-5FD7-BAD2-BF10F78FA0D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

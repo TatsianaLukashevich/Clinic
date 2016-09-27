@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="884CBC66-B2BE-370C-A2DE-0F1417A89663" name="Pracownik">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:32:26 UTC</createdTime>
+<commentInRDBMS>Opisuje pracownika(lekarza), pracujacego w przychodni</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Pracownicy</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PESEL_prac" id="A889C6F5-0DC4-4C60-42FB-DAD199E1EEF5">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:33:04 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pracownikow</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Imie" id="A9D1AFD9-8805-0808-C725-B3968C361AE7">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:33:12 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia osoby</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwisko" id="B4CDE6E4-3C67-0B9B-6012-23EB03757A1D">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:33:32 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia osoby</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Wynagrodzenie" id="77BCE74D-A9DE-82CD-134E-9E21D524F019">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:34:12 UTC</createdTime>
+<commentInRDBMS>Okresla wynagrodzenie otrzymane w poprzednim miesiacu pracy</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Specjalizacja" id="7A2FBA53-7B34-8C9B-5D0F-BD86A8219BB1">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:33:44 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia specjalizacji danego lekarza</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data zatrudnienia" id="91315454-F600-F6BA-7458-B5C352708F8E">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:34:30 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia daty zatrudnienia pracownika</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="435D6983-639D-6044-F50C-B1D1FA1CD729" name="Pracownik PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:33:10 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A889C6F5-0DC4-4C60-42FB-DAD199E1EEF5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

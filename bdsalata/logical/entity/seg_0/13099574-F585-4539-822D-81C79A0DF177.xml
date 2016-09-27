@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="13099574-F585-4539-822D-81C79A0DF177" name="Terminarz">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 09:16:05 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia czasu i daty  pracy pracownika w okreslonym gabinecie</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Terminarze</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Data" id="BCD842FE-7D60-4C91-A823-F43DD08258F9">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 09:16:36 UTC</createdTime>
+<commentInRDBMS>Okresla dzien pracy pracownika w danym gabinecie</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Godzina_rozpoczecia" id="B6553597-5754-EB2A-ABDA-D32A18835917">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 09:16:53 UTC</createdTime>
+<commentInRDBMS>Okresla godzine rozpoczecia przcy</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Godzina_zakonczenia" id="8175331B-9565-418A-F396-570384E23A64">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:00:49 UTC</createdTime>
+<commentInRDBMS>Okresla godzine zakonczenia pracy</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESEL_prac" id="EEA0B1D8-EFB1-8C10-EC78-0345ED9FEF54">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 09:17:15 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia pracy pracownika w okreslonym gabinecie</commentInRDBMS>
+<generatorID>BE839357-3D0A-811D-76BC-D923E3683DD6</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<referedAttribute>A889C6F5-0DC4-4C60-42FB-DAD199E1EEF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_gabinetu" id="FCED06B9-3596-4436-1F29-049CFC95A7BC">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 09:17:22 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia gabinetu, w ktorym pracuje pracownik</commentInRDBMS>
+<generatorID>977F0682-39AC-9048-123B-31252C838830</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<referedAttribute>98F24779-C041-134A-ADFF-CF2CA1606F98</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E3780E0-6689-5707-D90F-6AEA5B366D15" name="Terminarz PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 09:16:40 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BCD842FE-7D60-4C91-A823-F43DD08258F9</attributeRef>
+<attributeRef>EEA0B1D8-EFB1-8C10-EC78-0345ED9FEF54</attributeRef>
+<attributeRef>FCED06B9-3596-4436-1F29-049CFC95A7BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

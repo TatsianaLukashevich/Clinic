@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Pracownicy" directorySegmentName="seg_0" id="3F935A93-93B3-CA7F-ED7D-6DEB19C6793B">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Wynagrodzenie" id="1B397575-03C9-525F-09E8-44B772A38FE5">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESEL_prac" id="2B8D72E7-50A2-555C-2E64-C5B7F78D30E5">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Imie" id="32A46CF7-80B9-6A9D-8DB8-65B1B7740186">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Specjalizacja" id="5D34888C-370C-8A16-BB1B-F3D373846BAF">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_zatrudnienia" id="69806FD4-4C5A-8A23-75D4-B7B28113B78B">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nazwisko" id="AF4FA170-C001-6022-2EDE-72E3F9BBCB68">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Prac_PK" id="0FC6CB50-F296-CCEF-52D0-34A4242F80AC">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

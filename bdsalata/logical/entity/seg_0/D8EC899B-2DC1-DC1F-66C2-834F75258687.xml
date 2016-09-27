@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D8EC899B-2DC1-DC1F-66C2-834F75258687" name="Badanie">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:45:59 UTC</createdTime>
+<commentInRDBMS>Okresla badania prowadzone w przychodni</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Badania</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_badania" id="A6EC10BA-563A-C5BF-040E-8ACFAAEEC28B">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:46:25 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania badan miedzy soba</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="9B7A4665-326E-ADEA-DB64-E0286DF2AC0E">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:46:39 UTC</createdTime>
+<commentInRDBMS>Sluzy do nazwy badania</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESEL_pac" id="758F3B61-CD9C-AA5C-C3B3-A12FE1310DA2">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:47:39 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pacjentow</commentInRDBMS>
+<generatorID>2586D3C8-CBF1-95D7-B12A-FF6C20E80D55</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<referedAttribute>B905C282-2363-9BD4-0F6F-E1B9B5782D04</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data" id="1646BECE-C823-F4BB-0D86-DC67166722B5">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:50:04 UTC</createdTime>
+<commentInRDBMS>Data prowadzonego badania badania</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5CE3BAD2-E908-1077-A5C1-638D974CBD2F" name="Badanie PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:46:35 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6EC10BA-563A-C5BF-040E-8ACFAAEEC28B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

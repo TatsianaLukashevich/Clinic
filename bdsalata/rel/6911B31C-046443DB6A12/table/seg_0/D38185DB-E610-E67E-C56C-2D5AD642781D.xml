@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D38185DB-E610-E67E-C56C-2D5AD642781D" name="Pacjenci">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opisuje pacjentow przychodni</commentInRDBMS>
+<generatorID>88DE112F-8C42-EC51-9AE3-DF01AB96A025</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PESEL_pac" id="B472C6EF-58D6-3F57-5A36-530DCB583CA1">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pacjentow</commentInRDBMS>
+<generatorID>B905C282-2363-9BD4-0F6F-E1B9B5782D04</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="11A66A96-AA4A-E580-4AB2-D6A3903E608F">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia osoby</commentInRDBMS>
+<generatorID>D1D3900A-4133-569A-ADEF-0066CA145040</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="B36CDD07-33EB-0935-4863-1C2DC5027297">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia osoby</commentInRDBMS>
+<generatorID>A5D1BDEB-A988-6C5C-78C4-1866FD595443</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Haslo" id="54B32FF6-D42A-B2A2-1009-AF6AAA20F0E8">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 14:48:00 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A59425AE-3683-5E95-6810-4B649E67C951" name="Pac_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>6AC0E29C-21C3-4303-776B-B6FD5803688F</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B472C6EF-58D6-3F57-5A36-530DCB583CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01F84CB3-0A0B-5467-CFE3-A57D20776FE5" name="PESEL_pac__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:20:42 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B472C6EF-58D6-3F57-5A36-530DCB583CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4D40BC2-080E-CD51-202F-8D685F9EDB39" name="Haslo__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:26:18 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54B32FF6-D42A-B2A2-1009-AF6AAA20F0E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

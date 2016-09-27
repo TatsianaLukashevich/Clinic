@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA375D08-472B-3243-CA9A-A3223D8C7719" name="Gabinety">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia gabinetu,ktory znajduje sie w przychodni</commentInRDBMS>
+<generatorID>D786DA02-462A-491D-49FF-CE021F9D0AE5</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nr_gabinetu" id="282384FB-E4E3-C407-3264-649FD9E49C11">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania gabinetow w przychodni</commentInRDBMS>
+<generatorID>98F24779-C041-134A-ADFF-CF2CA1606F98</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Przeznaczenie" id="22A47667-95B3-AB51-E02D-BBCB05EF81B1">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opis przeznaczenia danego gbinetu w przychodni</commentInRDBMS>
+<generatorID>86319EB7-9E92-9E8E-83E3-F5128285D85B</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06CECDC6-E781-032F-B76A-9A82D44C1824" name="G_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>299FE3C7-3BE8-602E-F31E-6BC869F65B10</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="282384FB-E4E3-C407-3264-649FD9E49C11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACE057C4-BE5C-2EF0-CE49-6A8B98206D9F" name="Gabinet__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:21:14 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="282384FB-E4E3-C407-3264-649FD9E49C11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

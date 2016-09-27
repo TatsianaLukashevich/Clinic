@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE5A6252-EDFB-98FA-7320-6B4C60CDCE04" name="Terminarze">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia czasu i daty  pracy pracownika w okreslonym gabinecie</commentInRDBMS>
+<generatorID>13099574-F585-4539-822D-81C79A0DF177</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Data" id="E7C83447-59B8-68F0-AACF-4F7AB5590F39">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla dzien pracy pracownika w danym gabinecie</commentInRDBMS>
+<generatorID>BCD842FE-7D60-4C91-A823-F43DD08258F9</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Godzina_rozpoczecia" id="A3125EC9-BC48-4B13-C15E-113A27D1A321">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla godzine rozpoczecia przcy</commentInRDBMS>
+<generatorID>B6553597-5754-EB2A-ABDA-D32A18835917</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Godzina_zakonczenia" id="8D041B17-A5FC-4134-5B52-DAFD0AE85FDC">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Okresla godzine zakonczenia pracy</commentInRDBMS>
+<generatorID>8175331B-9565-418A-F396-570384E23A64</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESEL_prac" id="61B4A600-1088-7B5A-0644-E8FE54DB9AE4">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia pracy pracownika w okreslonym gabinecie</commentInRDBMS>
+<generatorID>EEA0B1D8-EFB1-8C10-EC78-0345ED9FEF54</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA95C5C5-BF06-340F-28CC-9D0583F2337F" referredColumn="2B8D72E7-50A2-555C-2E64-C5B7F78D30E5"/>
+</associations>
+</Column>
+<Column name="Nr_gabinetu" id="2FAAEB26-5CEA-64C4-05B7-B89613660899">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia gabinetu, w ktorym pracuje pracownik</commentInRDBMS>
+<generatorID>FCED06B9-3596-4436-1F29-049CFC95A7BC</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1E83A20-6DBF-AC09-0A17-9DE221BDB776" referredColumn="282384FB-E4E3-C407-3264-649FD9E49C11"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D6E4E936-222B-25B8-506A-BE3B4EE0085E" name="T_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>8E3780E0-6689-5707-D90F-6AEA5B366D15</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7C83447-59B8-68F0-AACF-4F7AB5590F39"/>
+<colUsage columnID="61B4A600-1088-7B5A-0644-E8FE54DB9AE4"/>
+<colUsage columnID="2FAAEB26-5CEA-64C4-05B7-B89613660899"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33FAC643-0114-F51F-F721-66DFB1736477" name="T_G_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>977F0682-39AC-9048-123B-31252C838830</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FAAEB26-5CEA-64C4-05B7-B89613660899"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B706CB0-BF4D-0AC3-7B44-70327608B6A7" name="T_Prac_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>BE839357-3D0A-811D-76BC-D923E3683DD6</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61B4A600-1088-7B5A-0644-E8FE54DB9AE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

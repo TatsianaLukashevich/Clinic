@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Gabinety" directorySegmentName="seg_0" id="EA375D08-472B-3243-CA9A-A3223D8C7719">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Przeznaczenie" id="22A47667-95B3-AB51-E02D-BBCB05EF81B1">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nr_gabinetu" id="282384FB-E4E3-C407-3264-649FD9E49C11">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="G_PK" id="06CECDC6-E781-032F-B76A-9A82D44C1824">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:07:47 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

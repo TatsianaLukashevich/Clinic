@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DE1F66A-939C-EE21-8D36-710CB7FB0443" name="Sprzety">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opisuje sprzet istniejacy w przychodni</commentInRDBMS>
+<generatorID>2B527406-12D9-DAAC-F5C1-080E5D02390F</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numer_seryjny" id="B05EF096-3FC2-B679-6D3A-95A4AFA142E8">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania sprzetu. Kazdy sprzed posiada swoj numer seryjny</commentInRDBMS>
+<generatorID>69DB6107-0E28-D21B-E1FD-5304B4F4A530</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="EF868F5B-5555-EE0C-AE63-2C33677A420F">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Kazdy sprzet posiada swoja nazwe</commentInRDBMS>
+<generatorID>98CD619F-1F54-1314-B4E8-CBF7198EB284</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stan" id="F9AA85B3-220C-6842-C24F-63E8F5920FBE">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 14:19:23 UTC</createdTime>
+<commentInRDBMS>Stan sprzetu, zepsuty - 0 , sprawny - 1</commentInRDBMS>
+<generatorID>8C369D9D-CE92-D04D-3720-EEDDC4E686F0</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Opis" id="7BE3DA2F-5152-95C3-76E8-2409B0262081">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Opis sprzetu, do czego ma sluzyc</commentInRDBMS>
+<generatorID>C29FA66F-6641-317A-C44C-9932635EEC19</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_gabinetu" id="193B0518-F209-80B8-EF83-EB1B1A0537E8">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<commentInRDBMS>Sluzy do rozrozniania gabinetow w przychodni</commentInRDBMS>
+<generatorID>991C031A-22B3-768B-AD5F-747321B8DE6B</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3307BD1E-B9E8-D647-844E-A48234FB6ED4" referredColumn="282384FB-E4E3-C407-3264-649FD9E49C11"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6674E019-2C7F-A6E0-E6E9-ABF572845B9F" name="S_PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>6C3FDF0D-061F-4529-65EE-C9629E33AC02</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B05EF096-3FC2-B679-6D3A-95A4AFA142E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17F05C49-0108-72D9-03A8-827237A80EBD" name="Numer_seryjny__IDX">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 17:22:05 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B05EF096-3FC2-B679-6D3A-95A4AFA142E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21A40A7B-FCCF-E888-5F06-039B0D5D6A39" name="Sprzety_Gabinety_FK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-11 20:07:00 UTC</createdTime>
+<generatorID>3C80DF18-0EE4-FF88-4681-6709BB69C3D8</generatorID>
+<ownerDesignName>bdsalata</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="193B0518-F209-80B8-EF83-EB1B1A0537E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

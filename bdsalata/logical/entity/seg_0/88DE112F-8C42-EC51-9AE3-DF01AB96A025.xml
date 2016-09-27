@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88DE112F-8C42-EC51-9AE3-DF01AB96A025" name="Pacjent">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:35:00 UTC</createdTime>
+<commentInRDBMS>Opisuje pacjentow przychodni</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Pacjenci</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PESEL_pac" id="B905C282-2363-9BD4-0F6F-E1B9B5782D04">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:35:06 UTC</createdTime>
+<commentInRDBMS>Pesel sluzy do rozrozniania pacjentow</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Imie" id="D1D3900A-4133-569A-ADEF-0066CA145040">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:35:25 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia osoby</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwisko" id="A5D1BDEB-A988-6C5C-78C4-1866FD595443">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:35:38 UTC</createdTime>
+<commentInRDBMS>Sluzy do okreslenia osoby</commentInRDBMS>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Haslo" id="B18A2C25-5D26-00D9-43D6-C6E0EFFABC80">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-05-08 14:46:41 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6AC0E29C-21C3-4303-776B-B6FD5803688F" name="Pacjent PK">
+<createdBy>Tatyana</createdBy>
+<createdTime>2016-04-01 07:35:22 UTC</createdTime>
+<ownerDesignName>bdsalata</ownerDesignName>
+<engineerTo>
+<item key="6911B31C-1839-945E-BE80-046443DB6A12" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B905C282-2363-9BD4-0F6F-E1B9B5782D04</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
